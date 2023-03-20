@@ -1,1 +1,88 @@
-<mxfile host="app.diagrams.net" modified="2023-03-20T19:19:46.481Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="W0LRfCrni4eUKPJB4evn" version="21.0.6" type="github"><diagram name="Page-1" id="OBbU5LkjNYjtkTjGJsoU">5Vptb6M4EP41kfYqdRUgQPIxL213pe6quuq0ex+dYMCqwVljQnK//sbYEMDs9eWSBu1+aMHj8Xh4PM/YHmXkLJP9HUfb+AsLMB3Z42A/clYj27bG7hgeUnJQEtd3lCDiJNBKR8Ej+QdXI7U0JwHOWoqCMSrIti3csDTFG9GSIc5Z0VYLGW3PukURNgSPG0RN6TcSiFhJp9VnSfknTKK4mtka654EVcpakMUoYEVD5NyMnCVnTKi3ZL/EVIJX4aLG3f6kt3aM41S8ZMC999X/9j2+21+T3d3NKvYXS3FtKys7RHP9wSPbo2BvEZCddFocNBLej1x6utgwyvjImUMnj9YfbBfWcwkN251UL+4foAdva7R5ijjL0+C6M0qPsfTTmegRIUvFdYgSQg9KecnSjFGUKT3wAiVbUNW+LFnOCebQ8xUX3U41JGEpy7ZogxsTZGWUSfPWZLtXHZSk+DrWK1l2zXSXV9vzIvmcZzK0lDclUmA+fQ6qke2EoY1nPohLH4rGVOsyKHumurr6kmdkAyq3KL26qiaENVZzKq1X+oEtHIZh73wKss/wV7AcfJKwPOGSctJN+YbWtBYIDgssZalU5UiUPbH8n2i/pa0Y7XBpKhM4xUE5+uMz3wLiMgArqd36MFvgvZTHIqEgsOTHC86e8FJ96SplqVzwkFDaESFKohSaG2ANRI6z2GEuCPB9rjsSEgRymkURE4EfVeisCshuICuDGUtCjWu3pAG8/ykprZrqkCMxS7DgB1DRA6rkUGVH3SyOqWbia1ncSDOOliGd3aLa8DEBwIvOAa/IB35PPuhg38agD6XGspwAIsttQWRZJkZTuw8j+1wgOQZIDZoaeEHe38rXPKHzjWDNmLtHa0wfWEYEYTL21kwIlvQEpWAdXFkuZMZa1rveieLRbcdjHWgNsL0erKfngtp9Ph5xGszlRi9JDTuFXIgWVH2cxYGx63cQgiSFeITFf/g260eyAZXbA1Ul45giQXZtN/rw0zM8MAIOHllhdVbKm31020Yy2B03WI9rHgw6prpJqMeUwsIwBbijQ0NtKxUyY9FrcN4eBzMjDu5h1yFpBMIHeYS7eJby2iBaPcyx+qhzPu5Yk1OTB7Dgh+/Nxt+yAdGim6t9s3N1OD3p1G5wKdY5z1Plpaxz/I4pvxMHF+ecZSbfW8aT6vQ3D+RRbk7XuRR9TkPoQ+VGVp0I/4RmGmUX56YzHR43X3DQGhY3L0U5d3IyynnjwVNuaoTFX1l5wf0EtydWwj6I7c6zhkcp84zwG9QymnWEVGZgerJCRwu9U5cajCrK/ytqvKm4Iql1yapKchhVZRF1ko1rkuuSCt4RXGTVjpuJMg2VO6wqsxR4DZdHrGbAO1zuvaEow6hZesGheG3F5TV1mPPnm865azI1043bl268c2WbyqEhVUq6xaSeatI7V0oqUIz97BeqkXi+CfO71khssx41tMtx567j9kD2zqcF+2KVpYtVjDrpwR+/+SDdXU/fGtpB2vZ+t+V1nJMtb/e+PMDlNa/P+p503zhODezO5MyGlwXN++YvThPXPRlNuuWEAdLEvBL31+sGwY9uTeGs/IDm8acXCu/jD1icm38B</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-20T19:21:15.638Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="fhigTMfo5qMYWblXJ-lF" version="21.0.6" type="github">
+  <diagram name="Page-1" id="OBbU5LkjNYjtkTjGJsoU">
+    <mxGraphModel dx="1050" dy="573" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-2" value="&lt;div style=&quot;color: rgb(253, 254, 255); background-color: rgb(3, 13, 34); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;As a &lt;span style=&quot;color: #ff2e97;font-weight: bold;&quot;&gt;**Music Fan**&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;, I would like to be able to track and rate the music I have listened to.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="50" width="470" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="110" width="820" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-3" value="Music Fan" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="230" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" target="L6N7WXhGx-ivGEDh7BCt-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="269.5" as="sourcePoint" />
+            <mxPoint x="220" y="269.5" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-9" value="Landing Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="130" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="L6N7WXhGx-ivGEDh7BCt-15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="269.5" as="sourcePoint" />
+            <mxPoint x="370" y="270" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-15" value="Form to Add Album Information and Ratings" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="130" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="269.5" as="sourcePoint" />
+            <mxPoint x="600" y="270" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-18" value="User Listening History Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="130" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-19" value="&lt;div style=&quot;color: rgb(253, 254, 255); background-color: rgb(3, 13, 34); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;As a &lt;/span&gt;&lt;span style=&quot;color: #ff2e97;font-weight: bold;&quot;&gt;**User**&lt;/span&gt;&lt;span style=&quot;color: #e1efff;&quot;&gt;, I would like my listening history and reviews to stay on the website, even after I have left.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="480" width="560" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="20" y="550" width="820" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-22" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="670" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-23" value="Landing Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="570" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-25" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="709.5" as="sourcePoint" />
+            <mxPoint x="170" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-26" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="709.5" as="sourcePoint" />
+            <mxPoint x="380" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-27" value="User Listening History Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="570" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-28" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="709.5" as="sourcePoint" />
+            <mxPoint x="600" y="710" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6N7WXhGx-ivGEDh7BCt-29" value="Album Information Page" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="610" y="570" width="160" height="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
