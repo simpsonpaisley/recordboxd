@@ -30,13 +30,63 @@
         </nav>
     </header>
 
-    <main>
-        <h2>Add Album</h2>
+    <main class="landingMain">
+        <div class="textArea" class="formArea">
+            <h2>Add Album</h2>
 
-        <form>
-            <label for="albumName">Album Name:</label>
-            <input type="text" id="albumName" name="albumName" />
-        </form>
+            <form class="addAlbumForm">
+                <div class="mainFormArea">
+                    <div class="formCol1" class="formColumn">
+                        <label for="albumName">Album Name:</label>
+                        <input type="text" id="albumName" name="albumName" placeholder="Album Name" required />
+
+                        <label for="albumArtist">Album Artist</label>
+                        <input type="text" id="albumArtist" name="albumArtist" placeholder="Artist" required />
+
+                        <label for="releaseYear">Release Year</label>
+                        <input type="number" id="releaseYear" name="releaseYear" placeholder="Release Year" required />
+
+                        <label for="albumArt">Album Art</label>
+                        <input type="text" id="albumArt" name="albumArt" placeholder="Album Art Image Address" />
+                    </div>
+                    <div class="formCol2" class="formColumn">
+                        <h3>Track Listing:</h3>
+                        <div class="trackLabel">
+                            <label for="track1" class="trackLabel">1.</label>
+                            <input type="text" id="track1" name="track1" />
+                        </div>
+                        <div class="trackLabel">
+                            <label for="track2" class="trackLabel">2.</label>
+                            <input type="text" id="track2" name="track2" />
+                        </div>
+                        <div class="trackLabel">
+                            <label for="track3" class="trackLabel">3.</label>
+                            <input type="text" id="track3" name="track3" />
+                        </div>
+                        <div class="trackLabel">
+                            <label for="track4" class="trackLabel">4.</label>
+                            <input type="text" id="track4" name="track4" />
+                        </div>
+                        <div class="trackLabel">
+                            <label for="track5">5.</label>
+                            <input type="text" id="track5" name="track5" />
+                        </div>
+                        <button class="addTrackButton">+ Add Track</button>
+                    </div>
+
+                    <div class="formCol3" class="formColumn">
+                        <label for="rating">Rating</label>
+                        <input type="range" min="0" max="10" value="5" step="0.5" id="rating" name="rating"
+                            class="ratingSlider" />
+
+                        <label for="review">Review</label>
+                        <textarea id="review" name="review" rows="10" cols="35"
+                            maxlength="500">Write your review here. Up to 500 characters.</textarea>
+                    </div>
+                </div>
+                <input type="submit">
+            </form>
+        </div>
     </main>
 
     <footer>

@@ -135,16 +135,15 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 /* END OF CSS RESET */
 
 /* COMPONENT CSS */
 
 body {
-    background-color: #f1f2f6;
+    background-image: linear-gradient(#7d12ff, #ab20fd);
 }
 header {
-    background-color: #ced6e0;
+    background-color: #f1f2f6;
     display: flex;
     flex-direction:column;
 }
@@ -180,7 +179,7 @@ h1 {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px #4D4747;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
@@ -214,7 +213,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #ced6e0;
+    background-color: #f1f2f6;
     height: 100px;
     display: flex;
     align-items: center;
@@ -227,7 +226,16 @@ footer {
 /* LANDING PAGE CSS */
 
 .landingMain {
-    margin: 20px;
+    margin: 40px;
+    
+}
+
+.textArea {
+    background-color: #f1f2f6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px #4D4747;
+    padding: 10px;
+    
 }
 
 .shortDesc {
@@ -264,6 +272,7 @@ footer {
     z-index: 2;
 }
 
+
 @keyframes recordAnimation {
     40% {
         transform: translate(300px);
@@ -276,4 +285,169 @@ footer {
     text-align: center;
 }
 
+/* ADD ALBUM PAGE CSS */
 
+.formArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.addAlbumForm {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.mainFormArea {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.formCol1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.formCol2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.formCol3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #7d12ff;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    background-color: #f1f2f6;
+    border: 2px solid #4D4747;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px;
+}
+
+.trackLabel {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to right, #7d12ff, #ab20fd);
+        font-family: 'Rubik Mono One', sans-serif;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #4D4747;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+        width: 500px;
+        align-self: center;
+        margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: none;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+}
+
+h3, label {
+    text-align: center;
+}
+
+.addTrackButton {
+    background-color: none;
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color:#7d12ff;   
+}
+
+textarea {
+    border: 2px solid #4D4747;
+    border-radius: 10px;
+    padding: 5px;   
+}
+
+/* HISTORY PAGE CSS */
+
+.historyMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.albumCard {
+    background-color: #f1f2f6;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px #4D4747;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin: 30px;
+    gap: 30px;
+}
+
+.albumArtDisplay {
+    width: 300px;
+    height: 300px;
+    padding: 30px 30px 0px 30px;
+}
+
+.albumInfoLine1 {
+    display: flex;
+    gap: 30px;
+}
+
+.albumInfoLine2 {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.seeMore {
+    background: linear-gradient(to right, #7d12ff, #ab20fd);
+        font-family: 'Rubik Mono One', sans-serif;
+        color: white;
+        font-size: 16px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #4D4747;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+}
+
+.albumTitle {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 25px;
+    color:#7d12ff;
+}
+
+.albumInfoPara {
+    font-family: 'Rubik', sans-serif;
+}
+
+.albumInfoLine2 p {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 16px;
+    color:#7d12ff;
+}
