@@ -6,6 +6,7 @@ function getStartedHandler() {
 
 // Add Track Button Script
 let trackNumber = 5; // To make track number start at 5.
+
 function addTrackHandler() {
 	trackNumber++; // To add one to track number each time button is clicked.
 
@@ -40,11 +41,28 @@ function addTrackHandler() {
 }
 
 // Form Submit
-
+let allAlbums = []; // array for storing form data.
+let albumNumber = 0; // for album numbers
 function formSubmit() {
 	event.preventDefault(); // Stops Page From refreshing on submit.
-	console.log('This is working!!');
-	document.getElementById('addAlbumForm').reset(); // Clears previous information from inputs when form is submitted.
+	albumNumber++;
 
-	// Save Information into an array.
+	let formElement = document.getElementById('addAlbumForm'); // Getting Form Element
+
+	let userAlbums = new FormData(formElement); // Creating a new object
+
+	let albumData = Object.fromEntries(userAlbums.entries()); //
+
+	allAlbums.push(albumData);
+
+	localStorage.setItem('albumArray', JSON.stringify(allAlbums));
+
+	console.log(allAlbums);
+	/* i = 0;
+
+	for (i; i < trackNumber; i++) {
+		console.log(i);
+	}
+*/
+	document.getElementById('addAlbumForm').reset(); // Clears previous information from inputs when form is submitted.
 }
