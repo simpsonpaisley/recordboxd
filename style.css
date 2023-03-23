@@ -188,6 +188,7 @@ button:hover {
     box-shadow: none;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
+    cursor: pointer;
 }
 
 nav {
@@ -210,6 +211,7 @@ nav a:hover {
     color:#ab20fd;
     transition-duration: 0.5s;
     transition-timing-function: ease;
+    cursor: pointer;
 }
 
 footer {
@@ -364,6 +366,7 @@ input[type="submit"]:hover {
     box-shadow: none;
         transition-duration: 0.5s;
         transition-timing-function: ease-in;
+        cursor: pointer;
 }
 
 h3, label {

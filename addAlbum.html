@@ -18,7 +18,7 @@
         <div class="mainHeader">
             <img src="/images/logo.svg" alt="logo" class="logoImageHeader" />
             <h1>RECORDBOXD</h1>
-            <button class="getStartedButton">Get Started</button>
+            <button class="getStartedButton" onclick="getStartedHandler()">Get Started</button>
         </div>
 
         <nav>
@@ -34,7 +34,7 @@
         <div class="textArea" class="formArea">
             <h2>Add Album</h2>
 
-            <form class="addAlbumForm">
+            <form class="addAlbumForm" onsubmit="formSubmit()" id="addAlbumForm">
                 <div class="mainFormArea">
                     <div class="formCol1" class="formColumn">
                         <label for="albumName">Album Name:</label>
@@ -51,27 +51,29 @@
                     </div>
                     <div class="formCol2" class="formColumn">
                         <h3>Track Listing:</h3>
-                        <div class="trackLabel">
-                            <label for="track1" class="trackLabel">1.</label>
-                            <input type="text" id="track1" name="track1" />
+                        <div id="trackListingSpace">
+                            <div class="trackLabel">
+                                <label for="track1" class="trackLabel">1.</label>
+                                <input type="text" id="track1" name="track1" />
+                            </div>
+                            <div class="trackLabel">
+                                <label for="track2" class="trackLabel">2.</label>
+                                <input type="text" id="track2" name="track2" />
+                            </div>
+                            <div class="trackLabel">
+                                <label for="track3" class="trackLabel">3.</label>
+                                <input type="text" id="track3" name="track3" />
+                            </div>
+                            <div class="trackLabel">
+                                <label for="track4" class="trackLabel">4.</label>
+                                <input type="text" id="track4" name="track4" />
+                            </div>
+                            <div class="trackLabel">
+                                <label for="track5">5.</label>
+                                <input type="text" id="track5" name="track5" />
+                            </div>
                         </div>
-                        <div class="trackLabel">
-                            <label for="track2" class="trackLabel">2.</label>
-                            <input type="text" id="track2" name="track2" />
-                        </div>
-                        <div class="trackLabel">
-                            <label for="track3" class="trackLabel">3.</label>
-                            <input type="text" id="track3" name="track3" />
-                        </div>
-                        <div class="trackLabel">
-                            <label for="track4" class="trackLabel">4.</label>
-                            <input type="text" id="track4" name="track4" />
-                        </div>
-                        <div class="trackLabel">
-                            <label for="track5">5.</label>
-                            <input type="text" id="track5" name="track5" />
-                        </div>
-                        <button class="addTrackButton">+ Add Track</button>
+                        <button type="button" class="addTrackButton" onclick="addTrackHandler()">+ Add Track</button>
                     </div>
 
                     <div class="formCol3" class="formColumn">
@@ -80,8 +82,8 @@
                             class="ratingSlider" />
 
                         <label for="review">Review</label>
-                        <textarea id="review" name="review" rows="10" cols="35"
-                            maxlength="500">Write your review here. Up to 500 characters.</textarea>
+                        <textarea id="review" name="review" rows="10" cols="35" maxlength="500"
+                            placeholder="Write your review here. Up to 500 characters"></textarea>
                     </div>
                 </div>
                 <input type="submit">
@@ -92,6 +94,9 @@
     <footer>
         <p>2023</p>
     </footer>
+
+    <script src="recordboxd.js"></script>
+
 </body>
 
 </html>
