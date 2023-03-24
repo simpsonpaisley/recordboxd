@@ -404,6 +404,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
     width: 400px;
+    height: 560px;
     margin: 30px;
     gap: 30px;
 }
@@ -447,10 +448,11 @@ textarea {
 
 .albumInfoPara {
     font-family: 'Rubik', sans-serif;
+    font-size: 25px;
 }
 
 .albumInfoLine2 p {
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 16px;
+    font-size: 25px;
     color:#7d12ff;
 }
