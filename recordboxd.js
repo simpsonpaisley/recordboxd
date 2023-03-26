@@ -50,26 +50,32 @@ function addTrackHandler() {
 	trackListing.appendChild(newTrackInputDiv); // Appending new div.
 }
 
+// Script to stop array being overwritten on page reload.
+
+let savedIndex = localStorage.getItem('currentIndex');
+let indexNumber = 0;
+if (savedIndex) {
+	indexNumber = savedIndex;
+}
+
 // Form Submit
 
-//let clickNumber = 0;
-let indexNumber = 0;
 function formSubmit() {
 	event.preventDefault(); // Stops Page From refreshing on submit.
-	//clickNumber++;
+
 	let formElement = document.getElementById('addAlbumForm'); // Getting Form Element
 
 	let userAlbums = new FormData(formElement); // Creating a new object.
 
 	let albumData = Object.fromEntries(userAlbums.entries()); //Populating the object.
 
-	allAlbums[indexNumber] = albumData;
+	allAlbums[indexNumber] = albumData; // To store album data in specified index number.
 
-	//allAlbums.push(albumData); // Adding object to array.
 	indexNumber++;
-	localStorage.setItem('albumArray', JSON.stringify(allAlbums)); // converting array to string, and then pushing to local storage.
 
-	//console.log(allAlbums);
+	localStorage.setItem('currentIndex', indexNumber);
+
+	localStorage.setItem('albumArray', JSON.stringify(allAlbums)); // converting array to string, and then pushing to local storage.
 
 	document.getElementById('addAlbumForm').reset(); // Clears previous information from inputs when form is submitted.
 }

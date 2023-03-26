@@ -391,8 +391,10 @@ textarea {
 
 .historyMain {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
     align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .albumCard {
@@ -407,6 +409,7 @@ textarea {
     height: 560px;
     margin: 30px;
     gap: 30px;
+    padding: 10px;
 }
 
 .albumArtDisplay {
