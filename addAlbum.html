@@ -52,28 +52,30 @@
                     <div class="formCol2" class="formColumn">
                         <h3>Track Listing:</h3>
                         <div id="trackListingSpace">
-                            <div class="trackLabel">
+                            <div class="trackLabel" id="div1">
                                 <label for="track1" class="trackLabel">1.</label>
                                 <input type="text" id="track1" name="track1" />
                             </div>
-                            <div class="trackLabel">
+                            <div class="trackLabel" id="div2">
                                 <label for="track2" class="trackLabel">2.</label>
                                 <input type="text" id="track2" name="track2" />
                             </div>
-                            <div class="trackLabel">
+                            <div class="trackLabel" id="div3">
                                 <label for="track3" class="trackLabel">3.</label>
                                 <input type="text" id="track3" name="track3" />
                             </div>
-                            <div class="trackLabel">
+                            <div class="trackLabel" id="div4">
                                 <label for="track4" class="trackLabel">4.</label>
                                 <input type="text" id="track4" name="track4" />
                             </div>
-                            <div class="trackLabel">
+                            <div class="trackLabel" id="div5">
                                 <label for="track5">5.</label>
                                 <input type="text" id="track5" name="track5" />
                             </div>
                         </div>
                         <button type="button" class="addTrackButton" onclick="addTrackHandler()">+ Add Track</button>
+                        <button type="button" class="addTrackButton" onclick="removeTrackHandler()">- Remove Last
+                            Track</button>
                     </div>
 
                     <div class="formCol3" class="formColumn">

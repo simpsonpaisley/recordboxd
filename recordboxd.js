@@ -26,6 +26,10 @@ function addTrackHandler() {
 
 	newTrackInputDiv.setAttribute('class', 'trackLabel'); //Adding class to new div.
 
+	let divNumber = 'div' + trackNumber;
+
+	newTrackInputDiv.setAttribute('id', divNumber);
+
 	let newInputLabel = document.createElement('label'); // Creating Label Element
 
 	newInputLabel.innerText = trackNumber + '.'; // Text for Label
@@ -48,6 +52,18 @@ function addTrackHandler() {
 	newTrackInputDiv.appendChild(newInput); // Appending Input
 
 	trackListing.appendChild(newTrackInputDiv); // Appending new div.
+}
+
+// Remove Last Track Script
+
+function removeTrackHandler() {
+	let removalNumber = 'div' + trackNumber;
+	let removedTrack = document.getElementById(removalNumber);
+
+	removedTrack.innerHTML = '';
+	removedTrack.remove(self);
+
+	trackNumber--;
 }
 
 // Script to stop array being overwritten on page reload.
@@ -80,8 +96,6 @@ function formSubmit() {
 	document.getElementById('addAlbumForm').reset(); // Clears previous information from inputs when form is submitted.
 }
 
-// Unstringifying array
-
 // To Display Album Information on Cards.
 
 if (allAlbums.length > 0) {
@@ -91,7 +105,8 @@ if (allAlbums.length > 0) {
 
 	console.log(allAlbums);
 
-	for (let j = 0; j < allAlbumsParsed.length; j++) {
+	for (let j = allAlbumsParsed.length - 1; j >= 0; j--) {
+		// Looping thorugh array backwards, so last added album appears first.
 		//Loop through each index of the array.
 		let cardSpace = document.getElementById('albumCardSpace'); //Getting card space area.
 
