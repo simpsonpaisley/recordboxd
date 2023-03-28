@@ -1,5 +1,15 @@
 'use strict';
 
+// Range Slider Script
+
+function rangeSlideHandler() {
+	let rangeValue = document.getElementById('rating');
+	rangeValue = rangeValue.value;
+
+	let rangeValueDisplay = document.getElementById('rangeValue');
+	rangeValueDisplay.innerText = rangeValue;
+}
+
 // Script to stop array being overwritten each time the form is submitted.
 
 let allAlbums = []; // array for storing form data.
@@ -180,6 +190,12 @@ if (allAlbums.length > 0) {
 		let expandDiv = document.createElement('div');
 		expandDiv.setAttribute('class', 'expandedDiv');
 
+		let listArea = document.createElement('div');
+		listArea.setAttribute('class', 'listArea');
+
+		let listTitle = document.createElement('h4');
+		listTitle.innerText = 'Track Listing';
+
 		let trackListEle = document.createElement('ol');
 		trackListEle.setAttribute('class', 'trackList');
 
@@ -192,6 +208,9 @@ if (allAlbums.length > 0) {
 			trackListEle.appendChild(trackListItem);
 		}
 
+		listArea.appendChild(listTitle);
+		listArea.appendChild(trackListEle);
+
 		let reviewDisplay = document.createElement('div');
 		reviewDisplay.setAttribute('class', 'reviewDisplay');
 		let reviewHeader = document.createElement('h4');
@@ -203,7 +222,7 @@ if (allAlbums.length > 0) {
 		reviewDisplay.appendChild(reviewHeader);
 		reviewDisplay.appendChild(reviewBody);
 
-		expandDiv.appendChild(trackListEle);
+		expandDiv.appendChild(listArea);
 		expandDiv.appendChild(reviewDisplay);
 
 		// Append Everything to card div
