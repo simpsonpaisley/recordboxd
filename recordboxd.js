@@ -113,6 +113,9 @@ if (allAlbums.length > 0) {
 		let cardDiv = document.createElement('div'); //Creating Card Div.
 		cardDiv.setAttribute('class', 'albumCard'); // Setting class for styling.
 
+		let defaultViewDiv = document.createElement('div');
+		defaultViewDiv.setAttribute('class', 'defaultView');
+
 		// Adding Image
 		let cardImg = document.createElement('img'); //Creating Img Element
 		let imgSrc = allAlbumsParsed[j].albumArt; // Getting Image SRC from Object.
@@ -145,7 +148,7 @@ if (allAlbums.length > 0) {
 		albumInfo1.appendChild(artistDisplay);
 		albumInfo1.appendChild(yearDisplay);
 
-		// Adding Ingo Line 2, containing rating and button.
+		// Adding Info Line 2, containing rating and button.
 
 		let albumInfo2 = document.createElement('div');
 		albumInfo2.setAttribute('class', 'albumInfoLine2');
@@ -157,19 +160,95 @@ if (allAlbums.length > 0) {
 		let buttonDisplay = document.createElement('button');
 		buttonDisplay.setAttribute('class', 'seeMore');
 		buttonDisplay.innerText = 'See More';
+		buttonDisplay.addEventListener('click', seeMoreHandler);
 
 		albumInfo2.appendChild(ratingDisplay);
 		albumInfo2.appendChild(buttonDisplay);
 
+		// Rendering Track Listing and Review
+
+		let currentObject = allAlbumsParsed[j];
+
+		let albumTracks = [];
+
+		for (let key in currentObject) {
+			if (key.includes('track')) {
+				albumTracks.push(currentObject[key]);
+			}
+		}
+
+		let expandDiv = document.createElement('div');
+		expandDiv.setAttribute('class', 'expandedDiv');
+
+		let trackListEle = document.createElement('ol');
+		trackListEle.setAttribute('class', 'trackList');
+
+		for (let m = 0; m < albumTracks.length; m++) {
+			let trackDisplay = albumTracks[m];
+
+			let trackListItem = document.createElement('li');
+			trackListItem.innerText = trackDisplay;
+
+			trackListEle.appendChild(trackListItem);
+		}
+
+		let reviewDisplay = document.createElement('div');
+		reviewDisplay.setAttribute('class', 'reviewDisplay');
+		let reviewHeader = document.createElement('h4');
+		reviewHeader.innerText = 'Review:';
+		let reviewBody = document.createElement('p');
+		let reviewText = allAlbumsParsed[j].review;
+		reviewBody.innerText = reviewText;
+
+		reviewDisplay.appendChild(reviewHeader);
+		reviewDisplay.appendChild(reviewBody);
+
+		expandDiv.appendChild(trackListEle);
+		expandDiv.appendChild(reviewDisplay);
+
 		// Append Everything to card div
 
-		cardDiv.appendChild(cardImg);
-		cardDiv.appendChild(cardHeader);
-		cardDiv.appendChild(albumInfo1);
-		cardDiv.appendChild(albumInfo2);
+		defaultViewDiv.appendChild(cardImg);
+		defaultViewDiv.appendChild(cardHeader);
+		defaultViewDiv.appendChild(albumInfo1);
+		defaultViewDiv.appendChild(albumInfo2);
+
+		cardDiv.appendChild(defaultViewDiv);
+		cardDiv.appendChild(expandDiv);
 
 		// Append Card Div to Card Space
 
 		cardSpace.appendChild(cardDiv);
+	}
+}
+let clickCount = 0;
+
+function seeMoreHandler() {
+	clickCount++;
+
+	if (clickCount == 1) {
+		this.parentElement.parentElement.nextElementSibling.style.visibility =
+			'visible';
+
+		this.parentElement.parentElement.parentElement.style.width = '95%';
+
+		this.innerText = 'Collapse';
+	} else if (clickCount == 2) {
+		this.parentElement.parentElement.nextElementSibling.style.visibility =
+			'collapse';
+		this.parentElement.parentElement.parentElement.style.width = '400px';
+		this.innerText = 'See More';
+		clickCount = 0;
+	}
+}
+
+function clearHistory() {
+	let userClear = prompt(
+		"Are You Sure? You Won't Be Able to Recover Your Data. Type 'Yes' to Confirm"
+	);
+
+	if (userClear == 'yes' || userClear == 'Yes') {
+		localStorage.clear();
+		location.reload();
 	}
 }
